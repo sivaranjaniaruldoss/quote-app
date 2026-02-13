@@ -1,0 +1,59 @@
+.result-container {
+  min-height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+}
+
+.main-quote {
+  margin-bottom: 60px;
+}
+
+.main-quote h1 {
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+.author {
+  font-size: 18px;
+  opacity: 0.9;
+}
+
+.previous-section h2 {
+  margin-bottom: 20px;
+}
+
+.quote-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.quote-card {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 15px;
+  border-radius: 12px;
+  backdrop-filter: blur(6px);
+  transition: transform 0.3s ease;
+}
+
+.quote-card:hover {
+  transform: translateY(-5px);
+}

@@ -1,0 +1,60 @@
+.home-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #d4c1ff, #b39ddb);
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.home-card {
+  width: 100%;
+  max-width: 450px;
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+.home-card h2 {
+  margin-bottom: 25px;
+  color: #4b0082;
+}
+
+.home-card input,
+.home-card textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.home-card textarea {
+  height: 90px;
+  resize: none;
+}
+
+.home-card button {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  background: #8e7dff;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.home-card button:hover {
+  background: #6c5ce7;
+}
+
+.error {
+  margin-top: 10px;
+  color: red;
+}
