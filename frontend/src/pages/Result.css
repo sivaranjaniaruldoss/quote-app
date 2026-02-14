@@ -1,59 +1,159 @@
+/* MAIN CONTAINER */
 .result-container {
   min-height: 100vh;
-  width: 100%;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  position: relative;
-  color: white;
+  background: linear-gradient(135deg, #f5f6fb, #ecebff);
+  padding: 80px 40px;
+  font-family: 'Inter', sans-serif;
+  color: #2f3542;
+}
+
+/* ================= HERO SECTION ================= */
+
+.hero-section {
+  max-width: 900px;
+  margin: 0 auto 100px auto;
   text-align: center;
-  padding: 40px 20px;
 }
 
-.overlay {
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.5);
-  z-index: 0;
+.quote-mark {
+  font-size: 60px;
+  color: #b8b1ff;
+  margin-bottom: 20px;
 }
 
-.content {
-  position: relative;
-  z-index: 1;
+.hero-quote {
+  font-size: 46px;
+  font-weight: 600;
+  line-height: 1.4;
+  margin-bottom: 30px;
 }
 
-.main-quote {
-  margin-bottom: 60px;
+.author-line {
+  margin-bottom: 30px;
 }
 
-.main-quote h1 {
-  font-size: 32px;
-  margin-bottom: 15px;
+.divider {
+  width: 50px;
+  height: 3px;
+  background: #dcd6ff;
+  margin: 0 auto 10px auto;
+  border-radius: 4px;
 }
 
 .author {
   font-size: 18px;
-  opacity: 0.9;
+  color: #7c83fd;
+  font-weight: 500;
+}
+
+/* BACK BUTTON */
+.back-btn {
+  background: linear-gradient(135deg, #dcd6ff, #b8b1ff);
+  border: none;
+  padding: 12px 24px;
+  border-radius: 14px;
+  color: #2f2f5e;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.back-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(184, 177, 255, 0.3);
+}
+
+/* ================= PREVIOUS SECTION ================= */
+
+.previous-section {
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
 .previous-section h2 {
-  margin-bottom: 20px;
+  margin-bottom: 40px;
+  font-size: 22px;
+  color: #7c83fd;
+  text-align: left;
 }
 
+/* GRID */
 .quote-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
 }
+
+/* ================= QUOTE CARD ================= */
 
 .quote-card {
-  background: rgba(255, 255, 255, 0.2);
-  padding: 15px;
-  border-radius: 12px;
-  backdrop-filter: blur(6px);
-  transition: transform 0.3s ease;
+  position: relative;
+  height: 220px;
+  border-radius: 20px;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  transition: 0.3s ease;
 }
 
+/* 🔥 NO BLUR — IMAGE STAYS SHARP */
+.card-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.55); /* soft overlay only */
+}
+
+/* Centered Content */
+.card-content {
+  position: relative;
+  z-index: 2;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-content p {
+  font-size: 16px;
+  margin-bottom: 8px;
+  line-height: 1.4;
+}
+
+.card-content small {
+  color: #7c83fd;
+  font-weight: 500;
+}
+
+/* Hover Effect */
 .quote-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-6px);
+  box-shadow: 0 20px 50px rgba(124, 131, 253, 0.15);
+}
+
+/* EMPTY MESSAGE */
+.empty {
+  color: #7b8191;
+  text-align: center;
+}
+.download-btn {
+  margin-top: 10px;
+  padding: 6px 14px;
+  border: none;
+  border-radius: 10px;
+  background: #7c83fd;
+  color: white;
+  font-size: 13px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.download-btn:hover {
+  background: #5f66f5;
 }
